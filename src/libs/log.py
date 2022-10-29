@@ -12,11 +12,10 @@ def logger(name: str) -> logging.Logger:
 
         formatter = logging.Formatter(fmt=(
                 '[%(levelname)s] - '
-                '[%(name)s:%(lineno)d] - '
                 '[%(asctime)s] -> '
                 '%(message)s'
             ),
-            datefmt='%Y-%m-%d %H:%M:%S'
+            datefmt='%d-%m-%Y %H:%M:%S'
         )
 
         handler = logging.StreamHandler()
